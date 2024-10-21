@@ -1,0 +1,15 @@
+.OuterLayout {
+   background-color: rgb(255, 255, 255);
+   width: 80%;
+   height : 100vh;
+   margin: auto auto;
+   display: flex;
+   flex-direction: row;
+}
+.LeftSide{
+   width: 30%;
+}
+
+.RightSide{
+   width: 70%;
+}

@@ -1,0 +1,32 @@
+.navbar{
+   font-size:2rem;
+   color: #9455f4;
+   text-align: right;
+   padding: 0rem 3rem;
+}
+
+ul{
+   list-style-type: none;
+ }
+
+ .nav li{
+   /* display: block; */
+   padding: 1rem 0rem;
+ }
+
+ .nav li { 
+  position: relative; /* Position relative for flexibility */
+  text-decoration: none; /* Remove default underline */
+  color: #5f00ec; /* Set the initial link color */
+  font-size: 2rem; /* Initial font size */
+  transition: transform 0.3s, color 0.3s; /* Smooth transition for both transform and color */
+}
+.nav li.active {
+  color: #4a2b7a; /* Change the color of the active tab */
+  font-size: 3rem;
+}
+
+.nav li:hover {
+  color: #3b0088; /* Change color on hover */
+  transform: scale(1.2); /* Scale the text size on hover */
+}

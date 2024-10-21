@@ -1,0 +1,64 @@
+.Home {
+   margin: 3.5rem 1rem;
+}
+.content {
+   font-size: 1.17rem;
+   color: #2e1d45;
+   background-color: rgba(255, 255, 255, 0.8); /* Slight white background for readability */
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ConnectOptions {
+   display: flex; /* Corrected: use lowercase 'flex' */
+   flex-direction: row;
+   gap: 1rem;
+   justify-content: center;
+}
+
+.Connect a {
+   color: #5f2cee; 
+   transition: color 0.3s, transform 0.3s ease; 
+   display: inline-block; /* Ensure the link is treated as a block for scaling */
+}
+
+.Connect a:hover {
+   color: #3b0088;
+   transform: scale(1.05); 
+}
+.emailContent{
+   display: flex;
+   justify-content: center;
+   margin: auto auto;
+}
+.TextBox {
+   justify-content: center;
+}
+
+label {
+   font-weight: bold;
+}
+
+textarea {
+   width: 100%; 
+   padding: 0.5rem; 
+   border: 1px solid #ccc; 
+   border-radius: 4px; 
+   resize: vertical; 
+}
+
+.cta-button {
+   font-size: 1.2rem;
+   padding: 0.75rem 2rem;
+   background-color: #5f00ec;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-bottom: 1.5rem;
+ }
+.cta-button:hover {
+   background-color: #3b0088;
+ }

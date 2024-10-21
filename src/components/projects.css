@@ -1,0 +1,86 @@
+.Home {
+   margin: 3.5rem 1rem;
+ }
+ 
+ .content {
+   font-size: 1.1rem;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .first-line {
+   display: block;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .project-card-container {
+   display: flex;
+   flex-wrap: wrap; /* Enable wrapping */
+   justify-content: space-around; /* Space between cards */
+   gap: 1.5rem; /* Space between cards */
+ }
+ 
+ .project-card {
+   width: calc(33% - 2rem); /* Each card takes up 33% of the width minus margins */
+   height: 20rem; /* Set a fixed height for the project card */
+   margin: 1rem;
+   flex: 1 1 calc(33% - 2rem); /* Allow cards to grow/shrink */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   border-radius: 1.5rem;
+   position: relative; /* Necessary for positioning child elements */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+ }
+ 
+ /* On hover, change the cursor to pointer */
+ .project-card:hover {
+   cursor: pointer;
+   transform: scale(1.05); /* Slight zoom effect on hover */
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+ }
+ 
+ .projects {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   overflow: hidden;
+   border-top-left-radius: 1.5rem; /* Apply border-radius only to the top-left corner */
+   border-top-right-radius: 1.5rem; /* Apply border-radius only to the top-right corner */
+ }
+ 
+ .project-image {
+   width: 100%;
+   height: 75%; /* Image takes up 80% of the project card's height */
+   object-fit: cover; /* Ensures the image covers the area without distortion */
+ }
+ 
+ .park-locator {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensures the image fills the space without being distorted */
+ }
+ 
+ .project-description {
+   padding: 1rem;
+   text-align: center;
+   background-color: #f7f7f7;
+   width: 100%;
+   height: 25%; /* Description takes up 20% of the project card's height */
+   border-bottom-left-radius: 1.5rem; /* Apply border-radius only to the top-left corner */
+   border-bottom-right-radius: 1.5rem; /* Apply border-radius only to the top-right corner */
+ }
+ 
+ /* Ensure responsiveness */
+ @media (max-width: 768px) {
+   .project-card {
+     width: calc(50% - 2rem); /* Two cards per row on smaller screens */
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .project-card {
+     width: 100%; /* One card per row on very small screens */
+   }
+ }
+ 

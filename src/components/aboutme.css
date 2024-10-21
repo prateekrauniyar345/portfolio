@@ -1,0 +1,12 @@
+.Home{
+   margin: 3.5rem 1rem;
+}
+.content {
+   font-size: 1.17rem;
+   color: #2e1d45;
+   background-color: rgba(255, 255, 255, 0.8); /* Slight white background for readability */
+   padding: 2rem ;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+ }

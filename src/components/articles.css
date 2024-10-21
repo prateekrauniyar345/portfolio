@@ -1,0 +1,58 @@
+.Home{
+   margin: 3.5rem 1rem;
+}
+.content {
+   background-color: rgba(255, 255, 255, 0.8); /* Slight white background for readability */
+   padding: 2rem ;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .article-div{
+   display: block; /* Enable Flexbox */
+   gap: 1rem; /* Space between the image and content divs */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   padding: 1rem;
+   border-radius: 0.5rem;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   margin: 0;
+ }
+ 
+ .article-div-intro{
+   display: flex; /* Enable Flexbox */
+   gap: 1rem; /* Space between the image and content divs */
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+   padding: 0.3rem;
+   border-radius: 0.5rem;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .image-div {
+   flex: 0 0 33%; /* Set the width of the image div to 33% */
+   border-radius: 1rem;
+ }
+
+ 
+ .content-div {
+   flex: 1; /* Take the remaining space */
+ }
+ 
+ /* Optional: Style for the image */
+ .image-div img {
+   width: 100%; /* Make the image fill the div */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 1rem;
+   overflow: hidden;
+ }
+
+ .article-div:hover{
+   cursor: pointer;
+   transform: scale(1.01);
+   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+ }
+ .article-div-contents{
+   padding: 0.3rem;
+   /* border: 0.1px solid black; */
+   border-radius: 1rem;
+   overflow: hidden;
+ }
