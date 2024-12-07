@@ -1,6 +1,6 @@
 import './articles.css'
 import { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+// import ReactMarkdown from 'react-markdown';
 import PointerInCpp from '../articles/pointersInC++.jsx';
 import MemoryManagementInCpp from '../articles/memorymanagementinC++.jsx';
 import OOPInCpp from '../articles/oopsInC++.jsx';
